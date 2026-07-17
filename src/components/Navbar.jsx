@@ -1,34 +1,46 @@
-import React from 'react'
+import React from "react";
+import { Search } from "lucide-react";
+import { User } from "lucide-react";
 
 function Navbar() {
   return (
-    <nav className="flex justify-between items-center p-6">
-      
+    <nav className="flex items-center px-20 py-6">
       {/* BOX 1: The Logo */}
-      <div>
+      <div className="flex-1">
         <img src="/images/DwelloLogo.png" alt="Logo" className="h-8" />
       </div>
 
       {/* BOX 2: The Links */}
-      <div className="flex gap-6 font-bold">
-        <a href="#home">Home</a>
-        <a href="#service">Service</a>
-        <a href="#agents">Agents</a>
-        <a href="#contact">Contact</a>
+      <div className="flex gap-8 justify-center font-bold ">
+        <a href="#home" className="text-[#2A1D16] hover:text-[#3e2c22]">
+          Home
+        </a>
+        <a href="#service" className="text-[#2A1D16] hover:text-[#3e2c22]">
+          Service
+        </a>
+        <a href="#agents" className="text-[#2A1D16] hover:text-[#3e2c22]">
+          Agents
+        </a>
+        <a href="#contact" className="text-[#2A1D16] hover:text-[#3e2c22]">
+          Contact
+        </a>
       </div>
 
       {/* BOX 3: The Buttons */}
-      <div className="flex gap-6 items-center font-bold">
-        <button>Search</button>
-        <button>Profile</button>
-        
-        <button className="bg-[#2A1D16] text-white px-4 py-2 rounded-lg">
+      <div className="flex-1 flex gap-6 items-center justify-end font-bold">
+        <button className="cursor-pointer">
+          <Search size={20} className="text-[#2A1D16] hover:text-[#3e2c22]" />
+        </button>
+        <button className="cursor-pointer">
+          <User size={20} className="text-[#2A1D16] hover:text-[#3e2c22]" />
+        </button>
+
+        <button className="bg-[#2A1D16] hover:bg-[#3e2c22] text-white px-4 py-2 rounded-lg cursor-pointer">
           Sign up
         </button>
       </div>
-      
     </nav>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;
