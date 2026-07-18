@@ -5,6 +5,7 @@ import FilterBar from "./components/FilterBar"
 import AboutSection from "./components/AboutSection";
 import ChooseUs from "./components/ChooseUs";
 import PopularHouses from "./components/PopularHouses";
+import Testimonials from "./components/Testimonials";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <AboutSection/>
       <ChooseUs/>
       <PopularHouses/>
+      <Testimonials/>
     </div>
   );
 }
