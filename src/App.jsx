@@ -6,6 +6,7 @@ import AboutSection from "./components/AboutSection";
 import ChooseUs from "./components/ChooseUs";
 import PopularHouses from "./components/PopularHouses";
 import Testimonials from "./components/Testimonials";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <ChooseUs/>
       <PopularHouses/>
       <Testimonials/>
+      <Footer/>
     </div>
   );
 }
