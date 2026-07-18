@@ -1,5 +1,4 @@
 import React from 'react';
-// Import the Star icon for ratings, and Chevrons for the bottom buttons!
 import { Star, ChevronLeft, ChevronRight } from 'lucide-react';
 
 function Testimonials() {
