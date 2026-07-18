@@ -3,9 +3,9 @@ import { MapPin, Home, CircleDollarSign } from "lucide-react";
 
 function FilterBar() {
   return (
-    <div className="max-w-5xl bg-[#E4D1C6] mx-auto rounded-2xl p-6 flex justify-between -mt-14 relative z-10 gap-6  shadow-sm">
+    <div className="max-w-5xl bg-[#E4D1C6] mx-auto rounded-2xl p-6 flex justify-between -mt-10 relative z-10 gap-6  shadow-sm">
       {/* Location Box  */}
-      <div className="bg-[#FBF5F1] flex items-center justify-between px-4 py-3 rounded-lg w-full relative">
+      <div className="bg-[#FBF5F1] flex items-center justify-between px-4 py-2 rounded-lg w-full relative">
         <input
           type="text"
           placeholder="Location"
@@ -15,7 +15,7 @@ function FilterBar() {
       </div>
 
       {/* Type Select DropDown  */}
-      <div className="bg-[#FBF5F1] flex items-center justify-between p-6 w-full rounded-lg relative">
+      <div className="bg-[#FBF5F1] flex items-center justify-between px-4 py-2 w-full rounded-lg relative">
         <select
           defaultValue=""
           className="outline-none bg-transparent w-full text-sm appearance-none font-bold text-sm cursor-pointer"
@@ -35,7 +35,7 @@ function FilterBar() {
       </div>
 
       {/* Price Box  */}
-      <div className="bg-[#FEFBF5] flex items-center justify-between px-4 py-3 rounded-lg w-full relative">
+      <div className="bg-[#FEFBF5] flex items-center justify-between px-4 py-2 rounded-lg w-full relative">
         <select
           defaultValue=""
           className="bg-transparent outline-none w-full text-[#2B1B12] font-bold text-sm appearance-none cursor-pointer"
@@ -53,6 +53,11 @@ function FilterBar() {
           className="text-[#2B1B12] shrink-0 absolute right-4 pointer-events-none"
         />
       </div>
+
+      {/* Submit Button */}
+      <button className="bg-[#2B1B12] hover:bg-[#3e2c22] text-white px-10 py-2 rounded-lg font-bold whitespace-nowrap transition-colors">
+        Sign up
+      </button>
     </div>
   );
 }
