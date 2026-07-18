@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
 import FilterBar from "./components/FilterBar"
 import AboutSection from "./components/AboutSection";
+import ChooseUs from "./components/ChooseUs";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       </div>
       <FilterBar/>
       <AboutSection/>
+      <ChooseUs/>
     </div>
   );
 }
